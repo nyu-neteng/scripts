@@ -38,6 +38,6 @@ print "./dmgrcli.php --newreg --nnlname=cos --nnfname=its --nntel=\"212-998-3444
       "--domain=net.nyu.edu --network=%s --ip=%s --hostname=secondaryrtr-vl%s --enable_reserve_ip_assignment --disable_netrdb_checks" % (
     str(net4), str(net4[3]), str(vlan))
 
-# Reserve firewall:
+# Reserve firewalls:
 print "./reserve_ipaddress.pl  --reserve --iplist=%s,%s --comment=\"Reserved for NOC usage\"" % (
     str(net4[4]), str(net4[-2]))
