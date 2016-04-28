@@ -1,7 +1,6 @@
 #!/usr/local/bin/python
 __author__ = 'joshs@nyu.edu'
-import sys, argparse 
-import ipaddress
+import sys, argparse, ipaddress
 
 parser = argparse.ArgumentParser(description='This script will output dnsmanager commands for a new subnet creation')
 parser.add_argument('-n','--network',help='Network to be used, i.e. 192.168.0.1/24',required=True)
