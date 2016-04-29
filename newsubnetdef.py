@@ -12,9 +12,10 @@ parser.add_argument('-fp', '--firewallpair', help='Name of fw pair in use', requ
 
 args = parser.parse_args()
 
-print ("Network is: %s" % args.network)
-print ("Vlan is: %s" % args.vlan)
-print ("Campus is: %s" % args.campus)
+print "Network is: %s" % args.network
+print "Vlan is: %s" % args.vlan
+print "Campus is: %s" % args.campus
+print "Firewalled is: %s\n" % args.firewalled
 
 net4 = ipaddress.ip_network(args.network)
 vlan = args.vlan
