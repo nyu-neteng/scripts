@@ -7,6 +7,7 @@ parser = argparse.ArgumentParser(description='This script will output required S
 parser.add_argument('-n', '--network', help='Network to be used, i.e. 192.168.0.1/24', required=True)
 parser.add_argument('-v', '--vlan', help='VLAN index to be used, i.e. 201', type=int, required=True)
 parser.add_argument('-vg', '--vrrp', help='VRRP group to be used, i.e. 41', type=int, required=True)
+parser.add_argument('-d', '--description', help='Description', type=int, required=True)
 
 args = parser.parse_args()
 
@@ -20,4 +21,8 @@ vrrp = args.vrrp
 
 print("# Primary router:")
 print("vlan %s" % str(vlan))
-print("\tname %s" % str(net4[0]))
+print("\tname %s" % str(net4))
+
+def print_int():
+    print("\ninterface vlan%s" % str(vlan)
+          "\tdescription")
